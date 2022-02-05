@@ -1,0 +1,10 @@
+[Unit]
+Description=weight measurement daemon
+
+[Service]
+ExecStart=/opt/weight_measurement/main.py
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
